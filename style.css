@@ -21,16 +21,24 @@
     align-items: flex-start;
     justify-content: space-between;
   }
+
   #nav-part1{
     /* background-color: red; */
     height: 70px;
     overflow: hidden;
 
   }
-  #nav img{
+  #nav #tlogo{
     height: 50px;
     width: 160px;
     margin: 10px;
+    display: block;
+  }
+  #nav #sflogo{
+    height:60px;
+    width: 90px;
+    margin: 8px;
+    padding: -5px;
     display: block;
   } 
   #nav #nav-part2{
@@ -117,6 +125,28 @@
     left: 0;
     
   }
+  #words{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 25px;
+    padding-right: 50px;
+  }
+  #words h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size:18px;
+    /* font-family: futura; */
+  }
+  
+  #linebw hr{
+    background-color: #000;
+    border-top: 1.7px solid #333;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
   #page2{
     height: 100vh;
     width: 100%;
@@ -124,7 +154,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3vw 1vw;
+    padding: 3vw 2vw;
   }
 #page2 .elem{
   height: 100%;
@@ -145,13 +175,30 @@
 #page2 .elem .dets{
   height: 60px;
   width: 80%;
-  background-color: rgba(241, 91, 206, 0.664);
+  /* background-color: #8aaad6; */
   z-index: 9;
   position: absolute;
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  /* font-weight: 400;\ */
+  font-size: 16px;
+  font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+
+}
+#dets1{
+  background-color: #fff6de;
+}
+#dets2{
+  background-color: #8aaad6;
+}
+#dets3{
+  background-color: #ffffff;
 }
 #page2 .elem .dets:hover{
   height: 200px;
@@ -184,6 +231,40 @@
     padding: 5vw 1vw;
   }
   
+}
+#bwp2p3{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  margin: 0 4vw;
+  gap: 5vw;
+  margin-top: -2vw;
+  margin-bottom: 2vw;
+}
+#slogan{
+  font-size: 4.8vw;
+  font-family: futura;
+  text-transform: uppercase;
+  color: #000;
+  width: 200vw;
+}
+#slogandesc{
+  font-size: 1.5vw;
+  font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+  font-weight: 100;
+  margin-left: -40px;
+}
+#slogandesc #para{
+  margin-top: 60px;
+}
+#shopcraft{
+  margin-top: 60px;
+  /* padding: 0 40px; */
+}
+#shopcraft a{
+  text-decoration: underline;
+  color: #000;
 }
 
 #page3{

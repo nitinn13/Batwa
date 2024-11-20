@@ -343,8 +343,6 @@
   width: 200vw;
 }
 #ourstorydesc{
-  /* margin-top: 40px;
-  margin-left: 50px; */
   margin: 60px 120px;
   font-size: 1.5vw;
   font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
@@ -356,8 +354,70 @@
 }
 #ourstorydesc2{
   margin-top: 70px;
-  margin-left: 23vw;
   font-size: 1.8vw;
   font-family: futura;
   color: #000;
+  text-align: center;
+}
+
+/* SUBSCRIPTION PAGE */
+#subs-container{
+  width: 100vw;
+  padding: 40px;
+  background-color: #f7f7f7;
+
+}
+
+#subs-container h1{
+  margin: 40px 0px;
+  font-size: 4vw;
+  font-family: futura;
+  color: #000;
+  text-align: center;
+}
+
+#subs-container p{
+  margin-bottom: 1rem;
+  font-size: 1.4vw;
+  line-height: 1.5;
+  text-align: center;
+  color: #666;
+}
+
+.subscribe-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.subscribe-form input[type="email"]{
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.subscribe-form button{
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover{
+  background-color: #0069d9;
+}
+
+.privacy-note{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #999;
+
 }

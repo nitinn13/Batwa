@@ -132,3 +132,14 @@ function videoconAnimation() {
     });
   }
   cursorAnimation();
+  function subscribe() {
+    const email = document.getElementById('email').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailRegex.test(email)) {
+        alert('Thank you for subscribing to our newsletter!');
+        document.getElementById('email').value = ''; 
+    } else {
+        alert('Please enter a valid email address.');
+    }
+}

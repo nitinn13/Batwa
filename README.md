@@ -14,7 +14,7 @@ CSS: Styling with focus on a monochromatic palette.
 JavaScript: Adding dynamic and interactive elements.
 ##🎯 Getting Started
 Follow these steps to set up and view the project locally:
-  1. Clone the repository:  git clone https://github.com/your-username/batwa.git
+  1. Clone the repository:  git clone https://github.com/nitinn13/batwa.git
   2. Navigate to the project folder:  cd batwa
   3. Open index.html in your preferred browser.
 

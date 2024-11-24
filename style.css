@@ -9,6 +9,7 @@
     height: 100%;
     width: 100%;
     background-color:#f7f7f7;
+    overflow-x: hidden;
 
   }
 #nav{
@@ -276,6 +277,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 20vh;
 }
 .child{
   height: 54vh;
@@ -285,25 +287,35 @@
   align-items: center;
   justify-content: center;
 
-
 }
+
 .child img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+#childtext{
+  /* margin: 50px; */
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center; 
+}
+
 /* SHOP PAGE STYLES */
 
 
 #shoppg1{
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background-color: #f7f7f7;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 80px;
+  overflow-x: hidden;
 
 }
 #shopslogan{
@@ -318,6 +330,78 @@
   font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
   font-weight: 100;
 }
+
+#shoppg2 {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f7f7f7; /* Matches the clean, light background */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 5vw; /* Adds some breathing space */
+  gap: 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+/* Individual Item Cards */
+#item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 250px; /* Consistent width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+#item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+#itemimg {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7; /* Neutral backdrop for images */
+}
+
+#item img {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: contain; /* Ensures image fits nicely */
+}
+
+/* Text Container */
+#itemtxt {
+  padding: 1rem;
+  font-family: 'Helvetica Now Text', 'Arial', sans-serif;
+  color: #333; /* Neutral text color */
+}
+
+#itemtxt1 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #000; /* Bold black for the title */
+}
+
+#itemtxt2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d35400; /* Accent color for pricing */
+  text-align: center;
+}
+
+
 
 /* ABOUT PAGE STYLES */
 
@@ -421,3 +505,4 @@
   color: #999;
 
 }
+

@@ -103,35 +103,40 @@ function videoconAnimation() {
   loadinganimation();
   
   function cursorAnimation() {
-    document.addEventListener("mousemove", function (dets) {
-      gsap.to("#cursor", {
-        left: dets.x,
-        top: dets.y,
-      });
+    const cursor = document.querySelector("#cursor");
+    const childElements = document.querySelectorAll(".child");
+  
+    document.addEventListener("mousemove", function (e) {
+      if (cursor.style.visibility === "visible") {  // Only move cursor if it's visible
+        gsap.to(cursor, {
+          x: e.x,  // GSAP automatically handles left/top positioning
+          y: e.y,
+        });
+      }
     });
-    // document.querySelector("#child1").addEventListener("mouseenter",function(){
   
-    // })
-  
-    // document.querySelector("#child1").addEventListener("mouseleave",function(){
-    //   gsap.to("#cursor",{
-    //     transform: 'translate(-50%,-50%) scale(0)'
-    //   })
-    // })
-    document.querySelectorAll(".child").forEach(function (elem) {
+    childElements.forEach(function (elem) {
       elem.addEventListener("mouseenter", function () {
-        gsap.to("#cursor", {
-          transform: "translate(-50%,-50%) scale(1)",
+        cursor.style.visibility = "visible"; // Show custom cursor when entering a child
+        gsap.to(cursor, {
+          scale: 1, // Cursor scales up when hovering over .child
+          duration: 0.3,
         });
       });
+  
       elem.addEventListener("mouseleave", function () {
-        gsap.to("#cursor", {
-          transform: "translate(-50%,-50%) scale(0)",
+        gsap.to(cursor, {
+          scale: 0, // Cursor scales down when mouse leaves .child
+          duration: 0.3,
         });
+        cursor.style.visibility = "hidden"; // Hide custom cursor when leaving a child
       });
     });
   }
+  
   cursorAnimation();
+  
+  
   function subscribe() {
     const email = document.getElementById('email').value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

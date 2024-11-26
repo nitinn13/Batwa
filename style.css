@@ -46,7 +46,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 30px;
+    /* margin-left: 14px; */
   }
   #nav-part2 #links a{
     text-transform: uppercase;
@@ -66,8 +67,8 @@
     margin-right: 20px;
   }
   #nav-part2 #icons i{
-    font-size: 18px;
-    margin:0 20px;
+    font-size: 19px;
+    margin:0 15px;
     font-weight:100 ;
   }
 

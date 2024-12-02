@@ -145,3 +145,21 @@ function videoconAnimation() {
         alert('Please enter a valid email address.');
     }
 }
+
+function toggleSidebar(sidebarId, menuIconId) {
+  const sidebar = document.getElementById(sidebarId);
+  const menuIcon = document.getElementById(menuIconId);
+
+  if (sidebar.style.left === '0px') {
+    sidebar.style.left = '-25vw'; 
+    menuIcon.innerHTML = '<i class="ri-menu-2-line"></i>'; 
+  } else {
+    sidebar.style.left = '0px'; 
+    menuIcon.textContent = '✖';
+  }
+}
+
+// Add event listener to the button
+document.getElementById('menuBtn').addEventListener('click', () => {
+  toggleSidebar('sidebar', 'menuIcon');
+});

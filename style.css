@@ -27,6 +27,7 @@
     /* background-color: red; */
     height: 70px;
     overflow: hidden;
+    margin-left: -23.5vw;
 
   }
   #nav #tlogo{
@@ -71,23 +72,86 @@
     margin:0 15px;
     font-weight:100 ;
   }
+  .sidebar-container {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -25vw;
+    width: 20vw;
+    height: 100%;
+    background: #ffffff;
+    color: #333333;
+    transition: 0.3s;
+    padding-top: 10vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0; 
+  }
+  .sidebar ul li:last-child {
+    border-bottom: none;
+  }
+  .sidebar ul li:hover {
+    background-color: #f1f1f1;
+    color: #000000;
+  }
+  
+  .sidebar ul li a {
+    color: #333333;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #F7F7F7 ;
+    color: #333333; 
+    border: 1px solid #f7f7f7;
+    padding: 10px;
+    margin-top: -2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .menu-btn .icon {
+    font-size: 22px;
+  }
+  
+  .menu-btn:hover {
+    background: #f7f7f7; 
+  }
 
   #cursor {
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjusted transparency */
+    background-color: rgba(255, 255, 255, 0.5); 
     position: fixed;
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    pointer-events: none; /* Prevents cursor div from interfering with clicks */
-    transition: transform 0.1s ease-out; /* Smooth scaling transition */
-    visibility: hidden; /* Start with the cursor hidden */
+    pointer-events: none; 
+    transition: transform 0.1s ease-out; 
+    visibility: hidden; 
   }
   
-  /* Optional: If you want to change the cursor to pointer within child elements */
   .child:hover {
     cursor: pointer;
   }
@@ -191,15 +255,11 @@
   /* background-color: #8aaad6; */
   z-index: 9;
   position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-transform: uppercase;
-  /* font-weight: 400;\ */
   font-size: 16px;
   font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
 

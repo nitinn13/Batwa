@@ -1,7 +1,4 @@
-// window.onload = function() {
-//   videoconAnimation();
-//   loadinganimation();
-// };
+
 function locomotiveScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -155,7 +152,7 @@ function toggleSidebar(sidebarId, menuIconId) {
     menuIcon.innerHTML = '<i class="ri-menu-2-line"></i>'; 
   } else {
     sidebar.style.left = '0px'; 
-    menuIcon.textContent = '✖';
+    menuIcon.innerHTML = '<i class="ri-close-line"></i>';
   }
 }
 

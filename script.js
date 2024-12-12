@@ -1,3 +1,4 @@
+console.log('Script loaded successfully!');
 
 function locomotiveScroll() {
   gsap.registerPlugin(ScrollTrigger);
@@ -130,7 +131,12 @@ function videoconAnimation() {
   
   cursorAnimation();
   
-  
+  function handlesubenter(event) {
+    if (event.keyCode === 13) {
+      subscribe();
+    }
+  }
+
   function subscribe() {
     const email = document.getElementById('email').value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

@@ -37,7 +37,7 @@ function navbarAnimation() {
     gsap.to("#nav-part1 img", {
       transform: "translateY(-100%)",
       scrollTrigger: {
-        trigger: "#page1",
+        trigger: "#page1, #shoppg1",
         scroller: "#main",
         start: "top 0",
         end: "top -5%",
@@ -48,7 +48,7 @@ function navbarAnimation() {
       transform: "translateY(-100%)",
       opacity: 0,
       scrollTrigger: {
-        trigger: "#page1",
+        trigger: "#page1, #shoppg1",
         scroller: "#main",
         start: "top 0",
         end: "top -5%",
@@ -152,6 +152,7 @@ function videoconAnimation() {
 function toggleSidebar(sidebarId, menuIconId) {
   const sidebar = document.getElementById(sidebarId);
   const menuIcon = document.getElementById(menuIconId);
+  console.log("Current Sidebar Left:", sidebar.style.left);
 
   if (sidebar.style.left === '0px') {
     sidebar.style.left = '-25vw'; 
